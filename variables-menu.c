@@ -18,4 +18,3 @@ int main(){
     printf("3. %s- $%.2f - %d available\n", snack3, price3, stock3);
     
 }
-
