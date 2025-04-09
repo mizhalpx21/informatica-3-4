@@ -4,6 +4,10 @@ int main(){
     //rectangle
     int height=50;
     int lenght=100;
+    printf("Enter the rectangle height:");
+    scanf("%d", &height);
+    printf("Enter the rectangle lenght:");
+    scanf("%d", &lenght);
     int area= height*lenght;
     int perimeter= height+height+lenght+lenght;
     printf("Area: %d\n", area);
@@ -28,7 +32,8 @@ int main(){
     //circle
     int ratio= 30;
     const float pi= 3.14159;
-    
+    int circleArea= pi*(ratio*ratio);
+    printf("Area of a circle = %d \n", circleArea);
 
 
 }
