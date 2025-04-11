@@ -2,8 +2,8 @@
 
 int main(){
     //rectangle
-    int height=50;
-    int lenght=100;
+    int height;
+    int lenght;
     printf("Enter the rectangle height:");
     scanf("%d", &height);
     printf("Enter the rectangle lenght:");
@@ -22,18 +22,26 @@ int main(){
     printf("%d°C\n" , celsius);
 
     //minutes and hours
-    int mins=349;
-    int hours=mins/60;
-    int extramins=mins%60;
+    int mins;
+    int hours;
+    int extramins;
+    printf("Enter the mins");
+    scanf("%d", &mins);
+    printf("Enter the hours");
+    scanf("%d", &hours);
+    printf("Enter the extramins");
+    scanf("%d", &extramins);
     printf("\n%d minutes is equal to", mins);
     printf("%d hours and", hours);
     printf("%d minutes.\n", extramins);
 
     //circle
     int ratio= 30;
-    const float pi= 3.14159;
+    printf("Enter the ratio of the circle: ");
+    scanf("%d", &ratio);
+    float pi = 3.14159;
     int circleArea= pi*(ratio*ratio);
     printf("Area of a circle = %d \n", circleArea);
-
+    return 0;
 
 }
