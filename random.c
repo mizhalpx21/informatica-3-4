@@ -4,8 +4,11 @@
 
 int main() {
     srand(time(NULL));
-    int diceRoll = (rand() % 6) + 1; // Generates a number between 1 and 6
-    printf("You rolled a: %d\n", diceRoll);
-    printf("Enter number ");
+    int rolls;
+    printf("Enter the number of dice rolls: ");
+    scanf("%d", &rolls);
+    for(;rolls > 0; -- rolls){
+    int diceRoll = (rand() %6) + 1;
+    printf("You rolled a: %d\n", diceRoll);}
     return 0;
 }
